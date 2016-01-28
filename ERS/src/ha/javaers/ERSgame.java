@@ -12,6 +12,10 @@ public class ERSgame {
 		}
 	}
 	
+	public void draw(int p){
+		
+	}
+	
 	public static void main(String[] args){
 		
 	}
