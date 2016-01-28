@@ -28,7 +28,7 @@ public class Deck {
 		}
 	}
 	
-	public Card drawFromDeck(){
+	public Card draw(){
 		return cards.remove(0);
 	}
 }

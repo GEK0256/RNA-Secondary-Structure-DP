@@ -2,14 +2,19 @@ package ha.javaers;
 
 public class Hand {
 	private Card[] cards;
-	private int[] value;
+	private int numCards;
 	
 	Hand(Deck d, int p){
-		
-		value = new int[];
-		cards = new Card[];
-		for(int i = 0; i < 5; i++){
-			
+		numCards = 52/p;
+		cards = new Card[numCards];
+		for(int i = 0; i < numCards; i++){
+			cards[i] = d.draw();
+		}
+	}
+	
+	public void displayAll(){
+		for(int i = 0; i < numCards; i++){
+			System.out.println(cards[i]);
 		}
 	}
 	

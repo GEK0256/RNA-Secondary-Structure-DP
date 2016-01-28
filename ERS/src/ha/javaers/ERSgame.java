@@ -2,11 +2,17 @@ package ha.javaers;
 
 public class ERSgame {
 	int numplayers;
-	int[] players;
+	Hand[] players;
+	Deck d = new Deck();
 	ERSgame(int p){
 		numplayers = p;
-		players = new int[p];
+		players = new Hand[p];
 		for(int i = 0; i  < p; i++){
+			players[i] = new Hand(d, p);
 		}
+	}
+	
+	public static void main(String[] args){
+		
 	}
 }
