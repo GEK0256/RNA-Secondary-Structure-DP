@@ -15,9 +15,7 @@ public class Hand {
 	}
 	
 	public Card drawCard(){
-		Card ret = cards.get(0);
-		cards.remove(0);
-		return ret;
+		return cards.remove(0);
 	}
 	
 	public void displayAll(){
