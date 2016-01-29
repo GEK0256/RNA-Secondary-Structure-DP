@@ -17,6 +17,6 @@ public class ERSgame {
 	}
 	
 	public static void main(String[] args){
-		
+		//elaine wu is a troll
 	}
 }
