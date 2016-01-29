@@ -15,8 +15,11 @@ public class Hand {
 	}
 	
 	public Card drawCard(){
-		
+		Card ret = cards.get(0);
+		cards.remove(0);
+		return ret;
 	}
+	
 	public void displayAll(){
 		for(int i = 0; i < numCards; i++){
 			System.out.println(cards.get(i));
