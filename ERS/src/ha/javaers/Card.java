@@ -1,5 +1,5 @@
 package ha.javaers;
-//AIJFILDFJSggi
+
 public class Card {
 	private int rank, suit;
 	private int xLoc, yLoc;
