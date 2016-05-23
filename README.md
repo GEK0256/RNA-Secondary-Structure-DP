@@ -1,2 +1,2 @@
-# Java-ERS
-Multiplayer peer - peer version of the card game Egyptian Rat Screw
+# RNA-Secondary-Structure-DP
+Annie Zhou sucks
