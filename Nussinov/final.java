@@ -1,7 +1,6 @@
 // Haron Adbaru, Guang Cui, Annie Zhao
 
 public class SecondaryRNA {
-	/*
 	public static int maxBasePair(String rna) {
 		int n = rna.length(); // length of RNA sequence
 		int[][] values = new int[n+1][n]; // number of total bonds for each subsequence
