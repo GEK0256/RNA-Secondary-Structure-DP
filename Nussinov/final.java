@@ -1,9 +1,10 @@
 // Haron Adbaru, Guang Cui, Annie Zhao
 
 public class SecondaryRNA {
+	// actual method that takes an RNA string and computes the maximum number of base pairs
 	public static int maxBasePair(String rna) {
 		int n = rna.length(); // length of RNA sequence
-		int[][] values = new int[n+1][n]; // number of total bonds for each subsequence
+		int[][] values = new int[n+1][n]; // number of total bonds for each subsequence (DP array)
 		for (int i=0;i<=5;i++) {
 			for (int j=0;j<n;j++) {
 				values[i][j] = 0; // 0 pairs for length 5 or less (no sharp turns)
@@ -23,10 +24,13 @@ public class SecondaryRNA {
 		return values[n][0]; // final answer
 	}
 	
+	// helper method that determines whether two characters are complements (Watson-Crick)
 	public static boolean complement(char a, char b) {
 		return a=='A'&&b=='U' || a=='U'&&b=='A' || a=='G'&&b=='C' || a=='C'&&b=='G';
 	}
+	
+	// main method: this specific case returns 11, which is the right answer
 	public static void main(String[] args) {
-		System.out.println(maxBasePair("GUCGAUUGAGCGAAUGUAACAACGUGGCUACGGCGAGA"));
+		System.out.println(maxBasePair("GUCGAUUGAGCGAAUGUAACAACGUGGCUACGGCGAGA")); // example RNA string
 	}
 }
