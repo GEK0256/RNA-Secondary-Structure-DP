@@ -1,3 +1,5 @@
+// Haron Adbaru, Guang Cui, Annie Zhao
+
 public class SecondaryRNA {
 	public static int maxBasePair(String rna) {
 		int n = rna.length(); // length of RNA sequence
