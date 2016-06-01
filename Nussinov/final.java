@@ -15,7 +15,8 @@ public class SecondaryRNA {
 				int max = values[i-1][j]; // if the last one doesn't pair up
 				for (int k = j; k < i+j-5; k++) { // if the last one pairs up with something
 					if (complement(rna.charAt(k), rna.charAt(i+j-1))) { // Watson-Crick
-						max = Math.max(max, values[k-j][j]+values[i-k+j-2][k+1]+1); // for each pairing of last element with another
+						max = Math.max(max, values[k-j][j]+values[i-k+j-2][k+1]+1); 
+						// for each pairing of last element with another
 					}
 				}
 				values[i][j] = max; // stores maximum into array
